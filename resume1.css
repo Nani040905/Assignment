@@ -154,7 +154,7 @@ p b {
         width: auto; /* Allow cells to take natural width */
         text-align: left !important; /* Override center/right alignment for better mobile readability */
         padding: 5px 0;
-    }
+    } 
 
     /* Adjust specific table cell widths for better mobile layout */
     table[width="850px"] td:first-child,
