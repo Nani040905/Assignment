@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Realistic Landscape Scene</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+      background: linear-gradient(to top, #87ceeb 0%, #b0e0e6 100%); /* sky */
+    }
+
+    /* Sun styling */
+        .sun {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 100px;
+            background-color: #FFD700; /* Gold color */
+            border-radius: 50%;
+            box-shadow: 0 0 40px 10px rgba(255, 215, 0, 0.7);
+            z-index: 10;
+        }
+
+        /* Mountain styling using CSS triangles */
+        .mountain {
+            position: absolute;
+            bottom: 300px;
+            background-color: #6B8E23; /* Olive green */
+            border-radius: 8px; /* Slightly rounded corners for mountains */
+        }
+
+        .mountain-1 {
+            left: 0;
+            width: 60%;
+            height: 40%;
+            clip-path: polygon(0 100%, 50% 0, 100% 100%);
+            background-color: #556B2F; /* Darker olive green */
+            transform: translateX(-20%); /* Extend off screen left */
+        }
+
+        .mountain-2 {
+            left: 30%;
+            width: 70%;
+            height: 50%;
+            clip-path: polygon(0 100%, 50% 0, 100% 100%);
+            background-color: #6B8E23; /* Olive green */
+            transform: translateX(10%); /* Overlap with mountain 1 */
+        }
+
+        .mountain-3 {
+            right: 0;
+            width: 50%;
+            height: 35%;
+            clip-path: polygon(0 100%, 50% 0, 100% 100%);
+            background-color: #556B2F; /* Darker olive green */
+            transform: translateX(20%); /* Extend off screen right */
+        }
+    /* Hills */
+    .hill {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      height: 300px;
+      background: radial-gradient(circle at 50% 100%, #7CFC00, #32CD32);
+      border-top-left-radius: 0% 0%;
+      border-top-right-radius: 0% 0%;
+      z-index: 2;
+    }
+
+    /* House */
+    .house {
+      position: absolute;
+      left: 470px;
+      bottom: 270px;
+      width: 85px;
+      height: 80px;
+      background: white;
+      border: 2px solid #000000;
+      z-index: 3;
+    }
+
+    .roof1 {
+      position: absolute;
+      top: -61px;
+      left: 0px;
+      width: 87px;
+      height: 60px;
+      background: #8b008b;
+      clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    }
+
+    .door {
+      position: absolute;
+      bottom: 0;
+      left: 32px;
+      width: 25px;
+      height: 45px;
+      background: #8b4513;
+    }
+
+    /* Tree */
+    .tree {
+      position: absolute;
+      left: 220px;
+      bottom: 130px;
+      width: 20px;
+      height: 100px;
+      background: #8b4513;
+      z-index: 3;
+    }
+
+    .canopy {
+      position: absolute;
+      top: -70px;
+      left: -50px;
+      width: 120px;
+      height: 100px;
+      background: radial-gradient(circle at center, #ffa500, #ff8c00);
+      border-radius: 60% 60% 50% 50%;
+    }
+    .room{
+      position: absolute;
+      left: 557px;
+      bottom: 270px;
+      width: 110px;
+      height: 80px;
+      background: white;
+      border: 2px solid #000000;
+      z-index: 3;
+    }
+    .roof2{
+        position: absolute;
+      top: 278px;
+      left: 515px;
+      width: 155px;
+      height: 60px;
+      background: #8b008b;
+      clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 100%);
+    }
+
+  </style>
+</head>
+<body>
+    <div class="mountain mountain-1"></div>
+    <div class="mountain mountain-2"></div>
+    <div class="mountain mountain-3"></div>
+
+  <div class="hill"></div>
+  <div class="sun"></div>
+  <div class="house">
+    <div class="roof1"></div>
+    <div class="door"></div>
+  </div>
+  <div class="roof2"></div>
+    <div class="room"></div>
+  <div class="tree">
+    <div class="canopy"></div>
+  </div>
+  <div class="flowers"></div>
+</body>
+</html>
