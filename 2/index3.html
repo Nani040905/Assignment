@@ -24,7 +24,39 @@
             box-shadow: 0 0 40px 10px rgba(255, 215, 0, 0.7);
             z-index: 10;
         }
-
+    /* Birds styling */
+        .birds {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 5;
+        }
+        .bird {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            animation: fly 5s infinite linear;
+        }
+        .bird-1 {
+            left: -30px;
+            top: 0;
+            background-color: #000; /* Black color for birds */
+            clip-path: polygon(50% 28%, 61% 35%, 82% 26%, 57% 43%, 54% 46%, 51% 38%, 47% 46%, 44% 42%, 17% 28%, 41% 34%);
+        }
+        .bird-2 {
+            left: 50px;
+            top: 20px;
+            background-color: #000;
+            clip-path: polygon(50% 28%, 61% 35%, 82% 26%, 57% 43%, 54% 46%, 51% 38%, 47% 46%, 44% 42%, 17% 28%, 41% 34%);
+        }
+        .bird-3 {
+            left: 100px;
+            top: 10px;
+            background-color: #000;
+            clip-path: polygon(50% 28%, 61% 35%, 82% 26%, 57% 43%, 54% 46%, 51% 38%, 47% 46%, 44% 42%, 17% 28%, 41% 34%);
+        }
         /* Mountain styling using CSS triangles */
         .mountain {
             position: absolute;
@@ -63,7 +95,7 @@
     .hill {
       position: absolute;
       bottom: 0px;
-      width: 100%;
+      width: 200%;
       height: 300px;
       background: radial-gradient(circle at 50% 100%, #7CFC00, #32CD32);
       border-top-left-radius: 0% 0%;
@@ -134,7 +166,7 @@
     }
     .roof2{
       position: absolute;
-      top: 435px;
+      top: 455px;
       left: 515px;
       width: 155px;
       height: 60px;
@@ -148,7 +180,11 @@
     <div class="mountain mountain-1"></div>
     <div class="mountain mountain-2"></div>
     <div class="mountain mountain-3"></div>
-
+  <div class="birds">
+    <div class="bird bird-1"></div>
+    <div class="bird bird-2"></div>
+    <div class="bird bird-3"></div>
+  </div>
   <div class="hill"></div>
   <div class="sun"></div>
   <div class="house">
