@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Development Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Game Dev Club</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#members" class="nav-link">Members</a>
+                <a href="#events" class="nav-link">Events</a>
+                <a href="#faculty" class="nav-link">Faculty</a>
+                <a href="#join" class="nav-link join-btn">Join Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Game Development Club</h1>
+            <p>Where creativity meets code and imagination becomes reality</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn-primary">Learn More</a>
+                <a href="#join" class="btn-secondary">Join Now</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="game-controller">
+                <div class="controller-body">
+                    <div class="d-pad">
+                        <div class="d-pad-up"></div>
+                        <div class="d-pad-center"></div>
+                        <div class="d-pad-down"></div>
+                        <div class="d-pad-left"></div>
+                        <div class="d-pad-right"></div>
+                    </div>
+                    <div class="buttons">
+                        <div class="btn-a"></div>
+                        <div class="btn-b"></div>
+                        <div class="btn-x"></div>
+                        <div class="btn-y"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>The Game Development Club is dedicated to fostering creativity, innovation, and technical skills in the exciting world of game development. We bring together passionate students who share a love for gaming and want to create their own interactive experiences.</p>
+                    
+                    <h3>What We Do</h3>
+                    <ul class="feature-list">
+                        <li>Weekly workshops on game design and development</li>
+                        <li>Collaborative game projects and game jams</li>
+                        <li>Industry guest speaker sessions</li>
+                        <li>Participation in gaming competitions and conventions</li>
+                        <li>Portfolio development and career guidance</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>150+</h3>
+                        <p>Active Members</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>25+</h3>
+                        <p>Games Created</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>5</h3>
+                        <p>Years Active</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>12+</h3>
+                        <p>Industry Partners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Members Section -->
+    <section id="members" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Members</h2>
+            <div class="members-grid">
+                <div class="member-card">
+                    <div class="member-avatar">AD</div>
+                    <h3>Alex Drake</h3>
+                    <p class="member-role">Club President</p>
+                    <p class="member-specialty">Unity Developer & Game Designer</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">SM</div>
+                    <h3>Sarah Mitchell</h3>
+                    <p class="member-role">Vice President</p>
+                    <p class="member-specialty">3D Artist & Animation</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">JC</div>
+                    <h3>Jake Chen</h3>
+                    <p class="member-role">Technical Lead</p>
+                    <p class="member-specialty">Unreal Engine & C++ Programming</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">ER</div>
+                    <h3>Emma Rodriguez</h3>
+                    <p class="member-role">Creative Director</p>
+                    <p class="member-specialty">Concept Art & UI/UX Design</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">MT</div>
+                    <h3>Mike Thompson</h3>
+                    <p class="member-role">Events Coordinator</p>
+                    <p class="member-specialty">Mobile Game Development</p>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">LP</div>
+                    <h3>Lisa Park</h3>
+                    <p class="member-role">Treasurer</p>
+                    <p class="member-specialty">Indie Game Development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section">
+        <div class="container">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="events-timeline">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">Mar</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Game Jam Weekend</h3>
+                        <p>48-hour intensive game development challenge. Form teams and create a complete game from scratch!</p>
+                        <span class="event-location">Computer Lab A</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">Mar</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Unity Workshop Series</h3>
+                        <p>Learn the fundamentals of Unity game engine in this comprehensive 4-week workshop series.</p>
+                        <span class="event-location">Room 205, Technology Building</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">05</span>
+                        <span class="month">Apr</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Industry Speaker: Game Design</h3>
+                        <p>Guest speaker from Epic Games will discuss career paths in game development and industry trends.</p>
+                        <span class="event-location">Main Auditorium</span>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">18</span>
+                        <span class="month">Apr</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Game Showcase & Demo Day</h3>
+                        <p>Present your completed games to fellow students, faculty, and potential employers.</p>
+                        <span class="event-location">Student Center Hall</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section id="faculty" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Faculty Advisors</h2>
+            <div class="faculty-grid">
+                <div class="faculty-card">
+                    <div class="faculty-avatar">DR</div>
+                    <h3>Dr. Robert Kim</h3>
+                    <p class="faculty-title">Faculty Advisor</p>
+                    <p class="faculty-department">Computer Science Department</p>
+                    <p class="faculty-bio">Specializes in computer graphics, game engines, and virtual reality development. 15+ years of industry experience at major gaming companies.</p>
+                </div>
+                <div class="faculty-card">
+                    <div class="faculty-avatar">PJ</div>
+                    <h3>Prof. Jennifer Walsh</h3>
+                    <p class="faculty-title">Co-Advisor</p>
+                    <p class="faculty-department">Digital Media Arts Department</p>
+                    <p class="faculty-bio">Expert in game design theory, narrative development, and interactive storytelling. Published researcher in game studies.</p>
+                </div>
+                <div class="faculty-card">
+                    <div class="faculty-avatar">DM</div>
+                    <h3>Dr. Marcus Johnson</h3>
+                    <p class="faculty-title">Technical Mentor</p>
+                    <p class="faculty-department">Software Engineering Department</p>
+                    <p class="faculty-bio">Focuses on software architecture for games, multiplayer systems, and performance optimization. Former lead engineer at indie game studios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section -->
+    <section id="join" class="section join-section">
+        <div class="container">
+            <h2 class="section-title">Join Our Community</h2>
+            <div class="join-content">
+                <div class="join-info">
+                    <h3>Ready to Start Your Game Dev Journey?</h3>
+                    <p>Whether you're a complete beginner or an experienced developer, our club welcomes all skill levels. Join us and be part of a creative community that's passionate about making games!</p>
+                    
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🎮</span>
+                            <div>
+                                <h4>Hands-on Experience</h4>
+                                <p>Work on real projects and build a portfolio</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🤝</span>
+                            <div>
+                                <h4>Networking</h4>
+                                <p>Connect with like-minded peers and industry professionals</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🏆</span>
+                            <div>
+                                <h4>Competitions</h4>
+                                <p>Participate in game jams and development contests</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">📚</span>
+                            <div>
+                                <h4>Learning Resources</h4>
+                                <p>Access to tools, tutorials, and mentorship</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="join-form">
+                    <h3>Get Started Today</h3>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="major">Major/Field of Study</label>
+                        <input type="text" id="major" name="major" placeholder="e.g., Computer Science">
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Experience Level</label>
+                        <select id="experience" name="experience">
+                            <option value="">Select your level</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="interests">Areas of Interest</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="interests" value="programming"> Programming</label>
+                            <label><input type="checkbox" name="interests" value="art"> Art & Design</label>
+                            <label><input type="checkbox" name="interests" value="sound"> Sound & Music</label>
+                            <label><input type="checkbox" name="interests" value="writing"> Writing & Narrative</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">Join the Club</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Game Dev Club</h3>
+                    <p>Building the next generation of game developers through collaboration, creativity, and code.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#join">Join Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: gamedev@university.edu</p>
+                    <p>Room: Technology Building 301</p>
+                    <p>Meeting: Fridays 3:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Game Development Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
