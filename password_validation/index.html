@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <form >
+        <input type="email" placeholder="email">
+        <br>
+        <input type="text" placeholder="first name">
+        <br>
+        <input type="text" placeholder="last name">
+        <br>
+        <input type="password" placeholder="password" id="pwd">
+        <br>
+        <p class="terms"><sub>By signing up you agree to our <a href="https://www.w3schools.com/about/about_copyright.asp">Terms of Service</a> and <a href="https://www.w3schools.com/about/about_copyright.asp">Privacy Policy</a></sub></p>
+        <button type="button" id="button" onclick="processPassword()">Create account</button>
+    </form>
+</body>
+<script>
+/* function processPassword(){
+    const pass= /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+    if (document.getElementById("pwd").value .trim().length < 8) {
+        alert("Password must be minimum eight characters");
+    }
+    else if(!pass.test(document.getElementById("pwd").value)){
+        alert("Password must contain at least one special character and one number");
+    }
+    else{
+        alert("Account created successfully");
+    }
+} */
+ function processPassword() {
+    const passRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*\W).{8,}$/;
+    const password = document.getElementById("pwd").value;
+    if (passRegex.test(password)) {
+        alert("Account created successfully");
+    } else {
+        alert("Password must be at least 8 characters long and contain at least one letter, one number, and one special character.");
+    }
+}
+</script>
+</html>
